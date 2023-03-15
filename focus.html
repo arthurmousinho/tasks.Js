@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks.Js</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="timerHeader">
+        <img src="./assets/logo.png" alt="tasks.js logo" id="logo">
+        <nav>
+            <a href="./index.html">
+                <img src="./assets/icons/home.svg" alt="home icon">
+                Home
+            </a>
+            <a href="./focus.html">
+                <img src="./assets/icons/timer.svg" alt="timer icon">
+                Sessão de foco
+            </a>
+        </nav>
+    </header>
+
+    <audio src="./assets/notification.wav" id="notification"></audio>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <img src="./assets/icons/close.svg" alt="close modal icon" class="closeModalButton" onclick="Timer.restart()"> 
+            <h2>
+                Fim do Timer
+            </h2>
+            <p>
+                Parabéns! Você completou seu ciclo de foco de 25 minutos. É hora de dar uma pausa merecida para recarregar suas energias.
+            </p>
+        </div>
+    </div>
+
+    <main class="focus-main-container">
+        <h1 class="timer">25:00</h1>
+        <div class="controls">
+            <button class="start-timer-button" onclick="Timer.start()">
+                Iniciar Sessão
+            </button>
+        </div>
+    </main>
+    
+    <script src="./src/DOM.js"></script>
+    <script src="./src/timer.js"></script>
+</body>
+</html>

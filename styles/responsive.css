@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+    main div {
+        width: 90vw;
+    }   
+
+    main div input {
+        width: 100%;
+    }    
+}
+
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo {
+        display: none;
+    }
+}
+
+@media (max-width: 340px) {
+    .focus-main-container .timer {
+        font-size: 6rem;
+    }
+}

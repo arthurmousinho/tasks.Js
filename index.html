@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks.Js</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="tasks.js logo" id="logo">
+        <nav>
+            <a href="./index.html">
+                <img src="./assets/icons/home.svg" alt="home icon">
+                Home
+            </a>
+            <a href="./focus.html">
+                <img src="./assets/icons/timer.svg" alt="timer icon">
+                Sessão de foco
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Suas Tarefas</h1>
+
+        <div>
+            <input type="text" placeholder="Adicione uma nova tarefa..." id="taskInput">
+            <button onclick="Task.add()">
+                <img src="./assets/icons/add.svg" alt="add icon">
+            </button>
+        </div>
+
+        <div class="tasks-container">
+            
+        </div>
+    </main>
+    
+    <script src="./src/dom.js"></script>
+    <script src="./src/storage.js"></script>
+    <script src="./src/task.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
